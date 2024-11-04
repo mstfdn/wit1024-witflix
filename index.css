@@ -1,0 +1,45 @@
+body{
+    padding: 1rem;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color: red;
+    margin: 0;
+}
+
+header nav{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+header nav a{
+    color: rgb(111, 111, 111);
+    text-decoration: none;
+}
+
+header .user-panel{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.user-panel input{
+    padding: .3rem;
+    width: 7rem;
+}
+
+.user-panel img{
+    border-radius: 100px;
+    width: 2.5rem;
+}
+
+/* hero */
