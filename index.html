@@ -1,46 +1,139 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="index.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>WiTFLiX | Browse</title>
-    </head>
-    <body>
-        <header>
-            <h1>WiTFLiX</h1>
-            <nav>
-                <!--Challenge 1: nav nasıl ortalanacak?-->
-                <a href="">Topic 1</a>
-                <a href="">Topic 2</a>
-                <a href="">Topic 3</a>
-                <a href="">Topic 4</a>
-            </nav>
-            <div class="user-panel">
-                <input type="text" placeholder="Search..">
-                <!--Challenge 2: büyüteç input alanına nasıl girecek?-->
-                <i class="fa-solid fa-magnifying-glass"></i>
-                <i class="fa-solid fa-bell notifications fa-2x"></i>
-                <img class="avatar" src="https://picsum.photos/50" alt="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="./index.css" rel="stylesheet" />
+    <title>WiTFLiX | Browse</title>
+  </head>
+  <body>
+    <header>
+      <h1>WiTFLiX</h1>
+      <nav>
+        <!-- Challenge 1: nav nasıl ortalanacak?-->
+        <a href="">Topic 1</a>
+        <a href="">Topic 2</a>
+        <a href="">Topic 3</a>
+        <a href="">Topic 4</a>
+      </nav>
+
+      <div class="user-panel">
+        <input type="text" placeholder="Search.." />
+        <!--  Challenge 2: Büyüteç input alanına nasıl girecek?-->
+        <i class="fa-solid fa-bell notifications fa-2x"></i>
+        <img class="avatar" src="https://picsum.photos/50" />
+      </div>
+    </header>
+    <main class="hero">
+      <div class="main-movie">
+        <h2>Movie Name</h2>
+        <div class="movie-info">
+          <span class="user-rating"
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-regular fa-star"></i> 7.3 IMDB</span
+          ><span class="content-rating">16+</span
+          ><span class="movie-duration">2 h 21 min</span>
+        </div>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi et
+          eligendi reprehenderit, aliquam iste porro ex atque nesciunt sapiente
+          explicabo. Totam dolores deleniti ad accusantium? Earum accusantium
+          laborum aliquid ullam.
+        </p>
+        <div class="movie-details">
+          <p><span>Starring: </span>lorem ipsum, lorem ipsum, lorem ipsum</p>
+          <p><span>Genre: </span>lorem, ipsum</p>
+          <p><span>Tags: </span>lor, em, ip, sum</p>
+        </div>
+        <button><i class="fa-solid fa-play"></i> Play Now</button>
+      </div>
+    </main>
+    <section class="suggestion">
+      <div class="suggestion-row">
+        <div class="suggestion-row-title">
+          <h3>Popular Movies</h3>
+          <a href="#">View All</a>
+        </div>
+        <div class="suggestion-movies">
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
             </div>
-        </header>
-        <main class="hero">
-            <div class="main-movie">
-                <h2>Movie Name</h2>
-                <div class="movie-info"><span class="user-rating"><i class="fa-solid fa-star"></i></span> <span><i class="fa-solid fa-star"></i></span> <span><i class="fa-solid fa-star"></i></span> <span><i class="fa-solid fa-star"></i></span> <span><i class="fa-regular fa-star"></i></span>
-                <span>7.3 IMBD</span> <span class="content-rating">16+</span> <span class="movie-duration">2 h 21 min</span>
-                </div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis in voluptate nisi praesentium nostrum eveniet aut fugit velit, nemo, quis, numquam accusantium perferendis labore facilis rerum tempore quisquam. Voluptas, libero.</p>
-                <div class="movie-details">
-                    <p><span>Starring: </span>lorem ipsum, lorem ipsun, lorem ipsum</p>
-                    <p><span>Genre: </span>lorem, ipsum</p>
-                    <p><span>Tags: </span>lor , em , ip , sum</p>
-                </div>
-                <button><i class="fa-solid fa-play"></i> Play Now</button>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
             </div>
-        </main>
-        <section class="suggestion"></section>
-        <footer></footer>
-    </body>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="suggestion-row">
+        <div class="suggestion-row-title">
+          <h3>Recommended for You</h3>
+          <a href="#">View All</a>
+        </div>
+        <div class="suggestion-movies">
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+          <div class="movie-card">
+            <div class="movie-detail-container">
+              <h4>Movie</h4>
+              <div class="movie-info">
+                <span class="content-rating">16+</span
+                ><span class="movie-duration">2 h 21 min</span>
+              </div>
+              <button><i class="fa-solid fa-play"></i> Play Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer></footer>
+  </body>
 </html>

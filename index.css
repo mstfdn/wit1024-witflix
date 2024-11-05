@@ -1,51 +1,68 @@
-body{
+body {
     padding: 1rem;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
+a:hover {
+    color: red;
+}
+
+h2, h4 {
+    text-transform: uppercase;
+} 
+
+/* header */
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1{
+header h1 {
     color: red;
-    margin: 0;
+    margin:0;
+    flex:1;
 }
 
-header nav{
+header nav {
     display: flex;
-    align-items: center;
     gap: .5rem;
 }
 
-header nav a{
+header nav a {
     color: rgb(111, 111, 111);
     text-decoration: none;
 }
 
-header .user-panel{
-    display: flex;
+header .user-panel {
+    display:flex;
     align-items: center;
     gap: .5rem;
+    flex:1;
+    justify-content: flex-end;;
 }
 
-.user-panel input{
-    padding: .3rem;
+.user-panel input {
+    padding: .3rem 1.8rem .3rem .3rem;
     width: 7rem;
+    background: url("./assets/images/search-icon.png");
+    background-size: 12%;
+    background-repeat: no-repeat;
+    background-position: 97% 50%;
 }
 
-.user-panel img{
+
+
+.user-panel img {
     border-radius: 100px;
     width: 2.5rem;
 }
 
 /* hero */
-main{
+main {
     aspect-ratio: 5/3;
-    border: 1px solid black;
+    border: 1px solid  black;
     margin: 2rem auto;
     padding: 1rem;
     display: flex;
@@ -53,10 +70,10 @@ main{
 }
 
 .user-rating i {
-    color: red
+    color:red;
 }
 
-.content-rating{
+.content-rating {
     border: 1px solid black;
     border-radius: .3rem;
     padding: .2rem;
@@ -67,16 +84,16 @@ main{
     width: 60%;
 }
 
-.movie-details span{
+.movie-details span {
     color: red;
-    font-weight: bold;
+    font-weight: bold;;
 }
 
-.movie-details p{
+.movie-details p {
     margin: .5rem 0;
 }
 
-button{
+button {
     background: red;
     border: 0;
     padding: .6rem 2.1rem;
@@ -88,4 +105,68 @@ button{
 button i {
     margin-left: -1rem;
     margin-right: .5rem;
+}
+
+/* suggestion */
+
+.suggestion-row {
+    margin-bottom: 2rem
+}
+
+.suggestion-row-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.suggestion-row-title a {
+    text-decoration: none;
+    color: gray;
+}
+
+.suggestion-row-title a:hover {
+    color: red;
+}
+
+.suggestion-row-title h3 {
+    margin: .5rem 0
+}
+
+.suggestion-movies {
+    display: flex;
+    gap: 1.5rem
+}
+
+.movie-card {
+    border: 1px solid black;
+    width: 250px;
+    border-radius: .5rem;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.movie-card h4 {
+    margin: 0;
+}
+
+.movie-card .content-rating {
+    margin-left: 0;
+}
+
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    gap:1rem
+}
+
+.movie-card button {
+    padding: .5rem 1.8rem;
+    border-radius: .4rem;
+    font-size: 1rem;
+}
+
+.movie-card button i {
+    margin-left: -.8rem;
+    margin-right: .3rem;
 }
